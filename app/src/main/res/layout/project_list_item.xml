@@ -9,7 +9,7 @@
         android:id="@+id/projListTitleTextViewId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="project title"
+        android:text="@string/project_title"
         android:padding="8dp"/>
 
 </androidx.cardview.widget.CardView>

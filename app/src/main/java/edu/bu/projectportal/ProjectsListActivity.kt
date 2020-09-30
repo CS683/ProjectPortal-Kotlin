@@ -14,7 +14,7 @@ class ProjectsListActivity : AppCompatActivity(), ProjectListAdapter.Listener {
     }
 
     override fun onClick(position: Int) {
-        val detailFragment = getSupportFragmentManager().findFragmentById(R.id.detailfragment) as ProjectDetailFragment?
+        val detailFragment = supportFragmentManager.findFragmentById(R.id.detailfragment) as ProjectDetailFragment?
         if (detailFragment != null) {
             detailFragment.setProject(position)
         } else {

@@ -44,10 +44,9 @@ class ProjectListAdapter(private val projects: Array<Project>) : RecyclerView.Ad
     //ViewHolder inner class
     class ProjectListViewHolder(itemView: View) : ViewHolder(itemView) {
         val projTitleView: TextView
-        val cardView: CardView
+        val cardView: CardView = itemView as CardView
 
         init {
-            cardView = itemView as CardView
             projTitleView = itemView.findViewById<View>(R.id.projListTitleTextViewId) as TextView
         }
     }

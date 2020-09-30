@@ -9,7 +9,7 @@ tools:context="edu.bu.projectportal.ProjectDetailFragment">
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/projTitleTextViewId"
-    android:text="Project Title"
+    android:text="@string/project_title"
     android:textAlignment="center"
     android:textSize="30sp"
     android:textStyle="bold"
@@ -21,7 +21,7 @@ tools:context="edu.bu.projectportal.ProjectDetailFragment">
     android:layout_height="wrap_content"
     android:layout_marginStart="8dp"
     android:id="@+id/projSummaryTextViewId"
-    android:text="This is the detail of the project" />
+    android:text="@string/project_desp" />
 
 </LinearLayout>
 

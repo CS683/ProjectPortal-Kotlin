@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 
 class ProjectDetailActivity : AppCompatActivity() {
-    var projectDetailFragment: ProjectDetailFragment? = null
+    private var projectDetailFragment: ProjectDetailFragment? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_project_detail)
@@ -14,7 +14,7 @@ class ProjectDetailActivity : AppCompatActivity() {
         //add fragments dynamically
         //create a fragment object
         projectDetailFragment = ProjectDetailFragment()
-        projectDetailFragment!!.setArguments(intent.extras)
+        projectDetailFragment!!.arguments = intent.extras
         // get the reference to the FragmentManger object
         val fragManager = supportFragmentManager
         // get the reference to the FragmentTransaction object
