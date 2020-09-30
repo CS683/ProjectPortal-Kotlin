@@ -14,7 +14,7 @@ class Project(var title: String, var summary: String) {
     }
 
     companion object {
-        val projects = arrayOf(
+        var projects = arrayOf(
                 Project("Weather Forecast", "Weather Forcast is an app ..."),
                 Project("Connect Me", "Connect Me is an app ... "),
                 Project("What to Eat", "What to Eat is an app ..."),

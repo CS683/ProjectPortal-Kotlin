@@ -25,7 +25,8 @@ class ProjectDetailFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_project_detail, container, false)
         titleTextView = view.findViewById(R.id.projTitleTextViewId)
         summaryTextView = view.findViewById(R.id.projSummaryTextViewId)
-        projectId = 0
+
+        projectId = arguments?.getInt("projectId")!!
         Log.d(TAG, " Project Id: $projectId")
         setProject(projectId)
         return view
